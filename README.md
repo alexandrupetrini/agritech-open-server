@@ -1,4 +1,4 @@
-# LoRa Server setup
+# Open Server setup
 
 This repository provides an [Ansible](https://www.ansible.com) playbook to
 setup the [LoRa Server](https://www.loraserver.io/).
