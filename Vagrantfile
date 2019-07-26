@@ -15,6 +15,7 @@ Vagrant.configure("2") do |config|
     box.vm.provision "ansible_local" do |ansible|
       ansible.install         = true
       ansible.install_mode    = :pip
+      ansible.pip_install_cmd = "sudo apt-get -y install python-pip"
       ansible.playbook        = "full_deploy.yml"
       ansible.config_file     = "ansible.cfg"
     end
