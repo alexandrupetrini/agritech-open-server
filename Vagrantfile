@@ -11,6 +11,8 @@ Vagrant.configure("2") do |config|
     box.vm.network "forwarded_port", guest: 1700, host: 1700, protocol: "udp"
     box.vm.network "forwarded_port", guest: 1883, host: 1883, protocol: "tcp"
     box.vm.network "forwarded_port", guest: 1884, host: 1884, protocol: "tcp"
+    box.vm.network "forwarded_port", guest: 5432, host: 5432, protocol: "tcp"
+    box.vm.network "forwarded_port", guest: 15432, host: 15432, protocol: "tcp"
 
     box.vm.provision "ansible_local" do |ansible|
       ansible.install         = true

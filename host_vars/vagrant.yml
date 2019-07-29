@@ -25,6 +25,14 @@ iptables:
       port: 1700
       source: 0.0.0.0/0
       protocol: udp
+    -
+      port: 5432
+      source: 0.0.0.0/0
+      protocol: tcp
+    -
+      port: 15432
+      source: 0.0.0.0/0
+      protocol: tcp
 
 # mosquitto configuration
 mosquitto:
